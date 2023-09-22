@@ -9,5 +9,5 @@ $body = "Name: $name\nEmail: $email\n\n$message";
 
 mail($to, $subject, $body);
 
-header('Location: thank_you.html'); // Redirect to a thank you page
+header('Location: index.html'); // Redirect to a thank you page
 ?>
