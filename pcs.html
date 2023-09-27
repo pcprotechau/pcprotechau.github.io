@@ -8,35 +8,6 @@
     <!--Font awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js"></script>
-
-    <style>
-        .content {
-          padding: 0 18px;
-          background-color: white;
-          max-height: 0;
-          overflow: hidden;
-          transition: max-height 0.2s ease-out;
-        }
-        </style>
-        
-        <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-        
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-              content.style.maxHeight = null;
-            } else {
-              content.style.maxHeight = content.scrollHeight + "px";
-            }
-          });
-        }
-        </script>
-    
 <link rel="icon" type="image/png" sizes="32x32" href="/Logo.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
@@ -93,6 +64,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$649</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             Intel UHD Graphics 730
                             <br>
@@ -111,12 +84,19 @@
                             Thermaltake Toughpower GX1 500
                             <br>
                             3x 120mm Case Fans
-                        </p> 
+                        </p>
+                        </div>
                         <br>
-                        <button type="button" class="collapsible">Open Collapsible</button>
+                        <br>
+                        <button type="button" class="collapsible">Customisations</button>
                         <div class="content">
-                        <p>Lorem ipsum...</p>
-                        </div>   
+                            <ul>
+                                <li>1TB Main SSD</li>
+                                <li>2TB Main SSD</li>
+                                <li>1TB 2nd SSD</li>
+                                <li>1TB 2nd SSD</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="grid-item featured-rooms">
@@ -128,6 +108,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$649</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             Intel UHD Graphics 730
                             <br>
@@ -141,6 +123,7 @@
                             <br>
                             Sillicon Power 512GB NVME SSD
                         </p>
+                        </div>
                     </div>
                 </div>
                 <div class="grid-item featured-rooms">
@@ -152,6 +135,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$949</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             AMD Radeon RX 6600
                             <br>
@@ -164,7 +149,8 @@
                             Intel Stock Cooler
                             <br>
                             Teamgroup 1TB NVME SSD
-                        </p>  
+                        </p>
+</div>  
                     </div>
                 </div>
                 <div class="grid-item featured-rooms">
@@ -176,6 +162,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$949</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             AMD Radeon RX 6600
                             <br>
@@ -188,7 +176,8 @@
                             Intel Stock Cooler
                             <br>
                             Teamgroup 1TB NVME SSD
-                        </p>     
+                        </p>
+</div>     
                     </div>
                 </div>
                 <div class="grid-item featured-rooms">
@@ -200,6 +189,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$1099</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             AMD Radeon RX 7600
                             <br>
@@ -212,7 +203,8 @@
                             AMD Wraith Stealth Cooler
                             <br>
                             Teamgroup 1TB NVME SSD
-                        </p>      
+                        </p>
+</div>      
                     </div>
                 </div>
                 <div class="grid-item featured-rooms">
@@ -224,6 +216,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$1099</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             AMD Radeon RX 7600
                             <br>
@@ -236,7 +230,8 @@
                             AMD Wraith Stealth Cooler
                             <br>
                             Teamgroup 1TB NVME SSD
-                        </p>       
+                        </p>
+</div>       
                     </div>
                 </div>
                 <div class="grid-item featured-rooms">
@@ -248,6 +243,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$1149</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             Nvidia Geforce RTX 4060
                             <br>
@@ -260,7 +257,8 @@
                             AMD Wraith Stealth Cooler
                             <br>
                             Teamgroup 1TB NVME SSD
-                        </p>      
+                        </p>
+</div>      
                     </div>
                 </div>
                 <div class="grid-item featured-rooms">
@@ -272,6 +270,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$1149</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             Nvidia Geforce RTX 4060 Ti
                             <br>
@@ -284,7 +284,8 @@
                             AMD Wraith Stealth Cooler
                             <br>
                             Teamgroup 1TB NVME SSD
-                        </p>        
+                        </p>
+</div>        
                     </div>
                 </div>
                 <div class="grid-item featured-rooms">
@@ -296,6 +297,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$1399</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             Nvidia Geforce RTX 4060 Ti
                             <br>
@@ -308,7 +311,8 @@
                             Deepcool AG400 White ARGB
                             <br>
                             Teamgroup 1TB NVME SSD
-                        </p>      
+                        </p>
+</div>      
                     </div>
                 </div>
                 <div class="grid-item featured-rooms">
@@ -320,6 +324,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$1399</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             Nvidia Geforce RTX 4060 Ti
                             <br>
@@ -332,7 +338,8 @@
                             Deepcool AG400 Black ARGB
                             <br>
                             Teamgroup 1TB NVME SSD
-                        </p>   
+                        </p>
+</div>   
                     </div>
                 </div>
                 <div class="grid-item featured-rooms">
@@ -344,6 +351,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$1649</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             Nvidia Geforce RTX 4070
                             <br>
@@ -356,7 +365,8 @@
                             Deepcool AG400 White ARGB
                             <br>
                             Teamgroup 1TB NVME SSD
-                        </p>      
+                        </p>
+</div>      
                     </div>
                 </div>
                 <div class="grid-item featured-rooms">
@@ -368,6 +378,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$1649</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             Nvidia Geforce RTX 4070
                             <br>
@@ -380,7 +392,8 @@
                             Deepcool AG400 Black ARGB
                             <br>
                             Teamgroup 1TB NVME SSD
-                        </p>      
+                        </p>
+</div>      
                     </div>
                 </div>
                 <div class="grid-item featured-rooms">
@@ -392,6 +405,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$2299</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             Nvidia Geforce RTX 4070 Ti
                             <br>
@@ -404,7 +419,8 @@
                             Deepcool AG400 White ARGB
                             <br>
                             Teamgroup 1TB NVME SSD
-                        </p>     
+                        </p>
+</div>     
                     </div>
                 </div>
                 <div class="grid-item featured-rooms">
@@ -416,6 +432,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$2299</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             Nvidia Geforce RTX 4070 Ti
                             <br>
@@ -428,7 +446,8 @@
                             Deepcool AG400 Black ARGB
                             <br>
                             Teamgroup 1TB NVME SSD
-                        </p>      
+                        </p>
+</div>      
                     </div>
                 </div>
                 <div class="grid-item featured-rooms">
@@ -440,6 +459,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$3799</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             Nvidia Geforce RTX 4080
                             <br>
@@ -452,7 +473,8 @@
                             Deepcool LE520 White AIO
                             <br>
                             Crucial P3 Plus 1TB
-                        </p>       
+                        </p>
+</div>       
                     </div>
                 </div>
                 <div class="grid-item featured-rooms">
@@ -464,6 +486,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$3799</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             Nvidia Geforce RTX 4080
                             <br>
@@ -476,7 +500,8 @@
                             Deepcool LE520 Black AIO
                             <br>
                             Crucial P3 Plus 1TB
-                        </p>       
+                        </p>
+</div>       
                     </div>
                 </div>
                 <div class="grid-item featured-rooms">
@@ -488,6 +513,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$6999</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             Nvidia Geforce RTX 4090
                             <br>
@@ -500,7 +527,8 @@
                             NZXT Kraken Elite 360 RGB AIO
                             <br>
                             Samsung 2TB 990 PRO
-                        </p>      
+                        </p>
+</div>      
                     </div>
                 </div>
                 <div class="grid-item featured-rooms">
@@ -512,6 +540,8 @@
                     <div class="room-info-wrap">
                         <span class="room-price">$6999</span>
                         <br>
+                        <button type="button" class="collapsible">Parts</button>
+                        <div class="content">
                         <p class="paragraph">
                             Nvidia Geforce RTX 4090
                             <br>
@@ -524,7 +554,8 @@
                             NZXT Kraken Elite 360 RGB AIO
                             <br>
                             Samsung 2TB 990 PRO
-                        </p>       
+                        </p>
+</div>       
                     </div>
                 </div>
 
@@ -548,6 +579,7 @@
                        PC Pro Tech
                        <br>
                        <p style="font-size: 15px; font-style: italic;">Performance Beyond Imagination</p>
+</div>
                        <br>
                        <br>
                        Email Us!
@@ -569,5 +601,22 @@
             </div>
         </div>
     </footer>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+        
 </body>
 </html>

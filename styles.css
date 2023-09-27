@@ -282,9 +282,9 @@ section{
     border-radius: 16px;
     padding: 10px;
     width: fit-content;
+    height: fit-content;
     box-sizing: border-box;
     text-align: center;
-    box-sizing: border-box;
     width: 35rem;
     
 }
@@ -351,7 +351,6 @@ section{
 .paragraph{
     color: white;
     font-family: 'Be Vietnam Pro', sans-serif;
-    background-color: rgb(49, 53, 49);
     border-radius: 16px;
 }
 .footer-paragraph{
@@ -420,8 +419,6 @@ section{
     top: 25rem;
     left: 0;
     bottom: 2.5rem;
-    background-color: rgb(49, 53, 49);
-    border-radius: 16px;
 }
 .room-price{
     display: block;
@@ -712,8 +709,8 @@ form .submit:hover{
 /*Collapsable Box*/
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-    background-color: #eee;
-    color: #444;
+    background-color: rgb(234, 132, 49);
+    color: white;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -721,19 +718,19 @@ form .submit:hover{
     text-align: left;
     outline: none;
     font-size: 15px;
+    font-family: 'Be Vietnam Pro', sans-serif;
   }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .collapsible:hover {
-    background-color: #ccc;
+      background-color: #ff8c00;
   }
   
-  /* Style the collapsible content. Note: hidden by default */
   .content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: rgb(49,53,59);
+    font-family: 'Be Vietnam Pro', sans-serif;
   }
 
   .collapsible:after {
@@ -747,3 +744,5 @@ form .submit:hover{
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+
+
