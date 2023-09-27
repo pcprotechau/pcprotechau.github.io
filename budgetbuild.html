@@ -4,10 +4,11 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PC ProTech</title>
+    <title>Budget Build</title>
     <!--Font awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
 <link rel="icon" type="image/png" sizes="32x32" href="/Logo.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
@@ -49,17 +50,48 @@
             </nav>
         </div>
     </header>
-    <main>
-        <div class="hero">
-            <div class="comtainer">
-                <div class="main-heading">
-                    <h1 class="title">Building</h1>
-                    <h2 class="subtitle">Your Dream PC</h2>
-                </div>
-            </div>
-        </div>
+    <h5 class="section-head">
+        <span class="heading">How It Works</span>
+    </h5>
+    <br>
+    <p style="text-align: center; margin-bottom: 6.85rem;">
+        1. Head over to <a href="purchase.html" style="text-decoration: underline; color: blue;">Purchase</a>
+        <br>
+        2. Enter your budget for you PC
+        <br>
+        3. We will get back to you with a list of parts that will fit your budget
+        <br>
+        4. You can then choose to purchase the parts or help us to modify them
+        <br>
+        5. A quote will be sent to you with the total cost of the PC
+        <br>
+        6. If you are happy with the quote, you can then pay for the PC
+        <br>
+        7. We will then build the PC and will email you when it is ready to be collected(A collection point will be arranged)
+        <br>
+        <br>
+        If you have any questions, feel free to contact us via email or whatsapp!
+      </p>
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
         
-    </main>
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }</script>
+      <button type="button" class="collapsible">Open Collapsible</button>
+                        <div class="content">
+                        <p>Lorem ipsum...</p>
+                        </div>    
+      <br>
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -92,6 +124,5 @@
             </div>
         </div>
     </footer>
-    <script src="main.js"></script>
 </body>
 </html>

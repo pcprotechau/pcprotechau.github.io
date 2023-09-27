@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Purchase</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" sizes="32x32" href="/Logo.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo-container">
+                    <img src="Logo.png" class="logo-img">
+                    <br>
+                    <p class="name">
+                        PC Pro Tech
+                    </p>
+                </a>
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                    <i class="fa fa-times"></i>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pcs.html" class="nav-link">PCs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="custompc.html" class="nav-link">Custom PC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="budgetbuild.html" class="nav-link">Budget Build</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="purchase.html" class="nav-link">Purchase</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <h5 class="section-head">
+        <span class="heading">Purchase</span>
+    </h5>
+    <p style="text-align: center; font-size: x-large;">*Local Pickup Only(Sydney NSW)*</p>
+    <form action="https://formspree.io/f/xknlqqer" method="POST">
+        <label>
+            Your email:
+        <input type="email" name="email">
+        </label>
+        <br>
+        <br>
+        <label>
+            Service Option:
+            <select name="serviceoption">
+                <option value="purchase">Purchase PC</option>
+                <option value="budget">Budget Build</option>
+                <option value="custom">Custom PC</option>
+              </select>
+        </label>
+        <br>
+        <br>
+        <label>
+            PC Option (if applicable):
+            <select name="pcoption">
+                <option value="na">Not Applicable</option>
+                <option value="sf1">Solar Flare Lvl 1</option>
+                <option value="sr1">Shadow Reaper Lvl 1</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <label>
+            Any Modifications (optional):
+            <input name="changes"></input>
+        </label>
+        <br>
+        <br>
+        <label>
+            Budget for build (if applicable):
+            <input name="budget" type="number"></input>
+        </label>
+        <br>
+        <br>
+        <label>
+            Parts list (if applicable):
+            <input name="parts"></input>
+        </label>
+        <br>
+        <br>
+        <label>
+            What will you be using the PC for (eg. gaming, editing, etc.):
+            <input name="use"></input>
+        </label>
+        <br>
+        <br>
+        <label>
+            If applicable, What will games will you be playing (eg. fortnite, minecraft, etc.):
+            <input name="games"></input>
+        </label>
+        <br>
+        <br>
+        <label>
+            Your message(preferred parts, further edits, etc.):
+            <textarea name="message" style="font-family:'Be Vietnam Pro', sans-serif"></textarea>
+        </label>
+    <!-- your other form fields go here -->
+    <br>
+        <button type="submit" class="btn">Send</button>
+  </form>
+  <br>
+  <h5 style="text-align: center;">
+    <span class="heading">How It Works</span>
+  </h5>
+  <br>
+  <p style="text-align: center;">
+    1. Place Your Order
+    <br>
+    2. We will email you, confirming your order. If getting a <a href="budgetbuild.html" style="text-decoration: underline; color: blue;">Budget Build</a>, we will confirm the parts with you.
+    <br>
+    3. We will send you a quote
+    <br>
+    4. If you are happy with the parts and quote, you pay us
+    <br>
+    5. We build your PC
+    <br>
+    6. We will email you when your PC is ready to be collected and a collection point will be arranged
+    <br>
+    <br>
+    If you have any questions, feel free to contact us via email or whatsapp!
+  </p>   
+  <br>
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-content-brand">
+                <a href="index.html" class="logo">
+                    <img class="logo-image" src="Logo.png" alt="" width="100px">
+                </a>
+                <div class="footer-paragraph">
+                   PC Pro Tech
+                   <br>
+                   <p style="font-size: 15px; font-style: italic;">Performance Beyond Imagination</p>
+                   <br>
+                   <br>
+                   Email Us!
+                   <br>
+                   pcprotechau@gmail.com
+                   <br>
+                   <br>
+                   Whatsapp Us!
+                   <br>
+                   0490366585
+                </div>
+            </div>
+            <div class="social-media-wrap">
+                <h4 class="footer-heading">Follow us</h4>
+                <div class="social-media">
+                    <a href="https://www.tiktok.com/@elons.pc.builds" class="sm-link"><img src="tiktoklogo.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

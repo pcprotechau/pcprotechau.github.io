@@ -28,6 +28,8 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     color: var(--dark-color);
+    background-color: rgb(38,38,38);
+    color: white;
 }
 a{
     text-decoration: none;
@@ -41,8 +43,8 @@ section{
 }
 /*Reuseable styles*/
 .btn{
-    color: #fff;
-    font-size: 1.3rem;
+    color: rgb(38,38,38);
+    font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
     padding: .5rem 3.5rem;
@@ -50,11 +52,15 @@ section{
     border-radius: 10rem;
     display: inline-flex;
     align-items: center;
+    margin-top: 30px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(234, 132, 49);
 }
 .container{
     width: 100%;
     max-width: 120rem;
-    padding: 0 1.5rem;
     margin: 0 auto;
 }
 .form-btn{
@@ -100,8 +106,15 @@ section{
     align-items: center;
     justify-content: space-between;
 }
-.logo img{
-    max-width: 80%;
+.logo-img{
+    width: 70px;
+    margin-right: 30px;
+}
+
+.logo-container {
+    display: flex; /* This makes the items inside it behave like a flexbox */
+    align-items: center; /* Aligns items vertically in the center */
+    font-size: 50px;
 }
 
 .hamburger-menu{
@@ -155,7 +168,7 @@ section{
 .hero{
     width: 100%;
     height: 100vh;
-    background: url("background.jpg") center no-repeat;
+    background: url("gaming-pc-build.webp") center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -224,11 +237,13 @@ section{
 .section-head{
     text-align: center;
     margin-bottom: 5rem;
+    margin-top: 10rem;
 }
 .heading{
     display: block;
-    font-size: 4rem;
+    font-size: 10rem;
     text-transform: uppercase;
+    color: white;
 }
 .sub-heading{
     font-size: 1.7rem;
@@ -238,15 +253,42 @@ section{
 }
 .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    grid-gap: 2.5rem;
+    grid-template-columns: repeat(4, 1fr) !important;
+    justify-content: center;
+    grid-gap: 1rem !important;
+}
+@media screen and (max-width: 1420px){
+    .grid{
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+@media screen and (max-width: 1050px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+@media screen and (max-width: 710px){
+    .grid{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
 }
 .grid-item{
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 16px;
+    padding: 10px;
+    width: fit-content;
+    box-sizing: border-box;
+    text-align: center;
+    box-sizing: border-box;
+    width: 35rem;
+    
 }
+
 .featured-cabins{
     height: 35rem;
     color: #fff;
@@ -307,9 +349,33 @@ section{
     outline-offset: .5rem;
 }
 .paragraph{
-    color: #000;
-    margin-bottom: 2.5rem;
+    color: white;
     font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: rgb(49, 53, 49);
+    border-radius: 16px;
+}
+.footer-paragraph{
+    color: white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.viewproduct{
+    color: white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.viewproduct:hover{
+    color: black;
+}
+.view-container {
+    background-color: rgb(234, 132, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust the height as needed */
+    cursor: pointer;
+    border-radius: 16px;
+}
+.view-container:hover {
+    background-color: #ff8c00;
 }
 .hours{
     color: #000;
@@ -335,11 +401,10 @@ section{
 }
 /*Rooms section styles*/
 .rooms{
-    background-color:#fff;
+    background-color:rgb(38,38,38);
 }
 .image-wrap{
     position: relative;
-    height: 25rem;
 }
 .image-wrap::after{
     content: '';
@@ -351,17 +416,19 @@ section{
 }
 .room-name{
     font-size: 2.6rem;
-    color: black;
+    color: white;
     top: 25rem;
-    position: absolute;
     left: 0;
     bottom: 2.5rem;
+    background-color: rgb(49, 53, 49);
+    border-radius: 16px;
 }
 .room-price{
     display: block;
     font-size: 3.6rem;
     font-weight: bold;
-    color: red;
+    color: rgb(234, 132, 49);
+    background-color: rgb(35, 38, 43);
 }
 .per-hour{
     color: var(--dark-color);
@@ -415,9 +482,11 @@ section{
 .footer-heading{
     text-transform: uppercase;
     margin-bottom: 2.5rem;
+
 }
 .social-media{
-    display: flex;
+    margin-top: 2.5rem;
+
 }
 .sm-link{
     width: 4rem;
@@ -491,6 +560,7 @@ section{
     .social-media-wrap{
         flex: 0 0 40%;
         margin-left: 2.5rem;
+        margin-bottom: 10px;
     }
     
 }
@@ -585,9 +655,9 @@ section{
     }
 }
 .room-image{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+
+
+    width: auto;/*placeholder*/
 }
 .special-image{
     width: 25%;
@@ -637,4 +707,43 @@ form .submit{
 form .submit:hover{
     background-color: #f44336;
     cursor: pointer;
+}
+
+/*Collapsable Box*/
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  .collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
