@@ -7,8 +7,8 @@
     <title>Purchase</title>
     <!--Font awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-<link rel="icon" type="image/png" sizes="32x32" href="/Logo.png">
+    <link rel="stylesheet" href="../styles.css">
+<link rel="icon" type="image/png" sizes="32x32" href="../Logo.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
@@ -17,8 +17,8 @@
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <a href="index.html" class="logo-container">
-                    <img src="Logo.png" class="logo-img">
+                <a href="../" class="logo-container">
+                    <img src="../Logo.png" class="logo-img">
                     <br>
                     <p class="name">
                         PC Pro Tech
@@ -30,19 +30,19 @@
                 </div>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="../" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="pcs.html" class="nav-link">PCs</a>
+                        <a href="../pcs" class="nav-link">PCs</a>
                     </li>
                     <li class="nav-item">
-                        <a href="custompc.html" class="nav-link">Custom PC</a>
+                        <a href="../custompc" class="nav-link">Custom PC</a>
                     </li>
                     <li class="nav-item">
-                        <a href="budgetbuild.html" class="nav-link">Budget Build</a>
+                        <a href="../budgetbuild" class="nav-link">Budget Build</a>
                     </li>
                     <li class="nav-item">
-                        <a href="purchase.html" class="nav-link">Purchase</a>
+                        <a href="../purchase" class="nav-link">Purchase</a>
                     </li>
                 </ul>
             </nav>
@@ -76,6 +76,25 @@
                 <option value="na">Not Applicable</option>
                 <option value="sf1">Solar Flare Lvl 1</option>
                 <option value="sr1">Shadow Reaper Lvl 1</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <label>
+            Windows Version:
+            <select name="windowsoption">
+                <option value="unactivated">Unactivated(Default)</option>
+                <option value="activated">Activated(+$20)</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <label>
+            Cable Extensions:
+            <select name="cableextensions">
+                <option value="none">None(Default)</option>
+                <option value="black">Black(+$40)</option>
+                <option value="white">White(+$40)</option>
             </select>
         </label>
         <br>
@@ -126,7 +145,7 @@
   <p style="text-align: center;">
     1. Place Your Order
     <br>
-    2. We will email you, confirming your order. If getting a <a href="budgetbuild.html" style="text-decoration: underline; color: blue;">Budget Build</a>, we will confirm the parts with you.
+    2. We will email you, confirming your order. If getting a <a href="../budgetbuild" style="text-decoration: underline; color: blue;">Budget Build</a>, we will confirm the parts with you.
     <br>
     3. We will send you a quote
     <br>
@@ -144,8 +163,8 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-content-brand">
-                <a href="index.html" class="logo">
-                    <img class="logo-image" src="Logo.png" alt="" width="100px">
+                <a href="../" class="logo">
+                    <img class="logo-image" src="../Logo.png" alt="" width="100px">
                 </a>
                 <div class="footer-paragraph">
                    PC Pro Tech
@@ -166,11 +185,12 @@
             <div class="social-media-wrap">
                 <h4 class="footer-heading">Follow us</h4>
                 <div class="social-media">
-                    <a href="https://www.tiktok.com/@elons.pc.builds" class="sm-link"><img src="tiktoklogo.png"></a>
+                    <a href="https://www.tiktok.com/@elons.pc.builds" class="sm-link"><img src="../tiktoklogo.png"></a>
                 </div>
             </div>
         </div>
     </div>
 </footer>
+<script src="../main.js"></script>
 </body>
 </html>

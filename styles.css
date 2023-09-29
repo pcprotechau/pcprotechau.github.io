@@ -28,7 +28,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     color: var(--dark-color);
-    background-color: rgb(38,38,38);
+    background-color: rgb(40,40,55);
     color: white;
 }
 a{
@@ -43,7 +43,7 @@ section{
 }
 /*Reuseable styles*/
 .btn{
-    color: rgb(38,38,38);
+    color: rgb(40,40,55);
     font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -261,15 +261,33 @@ section{
     .grid{
         grid-template-columns: repeat(3, 1fr) !important;
     }
+    .heading{
+        font-size: 8rem;
+    }
+    .name{
+        font-size: 7rem;
+    }
 }
 @media screen and (max-width: 1050px){
     .grid{
         grid-template-columns: repeat(2, 1fr) !important;
     }
+    .heading{
+        font-size: 6rem;
+    }
+    .name{
+        font-size: 5rem;
+    }
 }
 @media screen and (max-width: 710px){
     .grid{
         grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .heading{
+        font-size: 4rem;
+    }
+    .name{
+        font-size: 3rem;
     }
 }
 .grid-item{
@@ -400,7 +418,7 @@ section{
 }
 /*Rooms section styles*/
 .rooms{
-    background-color:rgb(38,38,38);
+    background-color: inherit;
 }
 .image-wrap{
     position: relative;
@@ -425,7 +443,7 @@ section{
     font-size: 3.6rem;
     font-weight: bold;
     color: rgb(234, 132, 49);
-    background-color: rgb(35, 38, 43);
+    background-color: inherit;
 }
 .per-hour{
     color: var(--dark-color);
@@ -652,7 +670,7 @@ section{
     }
 }
 .room-image{
-
+    border-radius: 16px;
 
     width: auto;/*placeholder*/
 }
@@ -713,12 +731,13 @@ form .submit:hover{
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 30rem;
     border: none;
     text-align: left;
     outline: none;
     font-size: 15px;
     font-family: 'Be Vietnam Pro', sans-serif;
+    border-radius: 16px;
   }
   
   .active, .collapsible:hover {
@@ -731,6 +750,8 @@ form .submit:hover{
     overflow: hidden;
     background-color: rgb(49,53,59);
     font-family: 'Be Vietnam Pro', sans-serif;
+    width: 30rem;
+    border-radius: 16px;
   }
 
   .collapsible:after {
@@ -742,7 +763,11 @@ form .submit:hover{
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "";
 }
 
-
+.infolist {
+    list-style-type: disc;
+    list-style-position: inside;
+    text-align: justify;
+  }
