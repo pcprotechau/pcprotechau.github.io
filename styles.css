@@ -771,3 +771,7 @@ form .submit:hover{
     list-style-position: inside;
     text-align: justify;
   }
+  .form{
+    text-align: left;
+    padding-left: 25lh;
+  }
