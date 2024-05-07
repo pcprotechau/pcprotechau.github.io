@@ -48,116 +48,129 @@
             </nav>
         </div>
     </header>
-    
     <h5 class="section-head">
         <span class="heading">Purchase</span>
     </h5>
-    <p style="text-align: center; font-size: x-large;">*Local Pickup Only(Sydney NSW)*</p>
-    <form action="https://formspree.io/f/xknlqqer" method="POST" class="form">
-        <label>
-            Your email:
-        <input type="email" name="email">
-        </label>
+    <p style="text-align: center; font-size: x-large; margin-bottom: 2rem;">*Local Pickup Only(Sydney NSW)*</p>
+    <div class="purchaseform">
+        <form action="https://formspree.io/f/xknlqqer" method="POST" class="form">
+            <label>
+                Your email:
+                <br>
+            <input type="email" name="email">
+            </label>
+            <br>
+            <br>
+            <label>
+                Service Option:
+                <br>
+                <select name="serviceoption">
+                    <option value="purchase">Purchase PC</option>
+                    <option value="budget">Budget Build</option>
+                    <option value="custom">Custom PC</option>
+                  </select>
+            </label>
+            <br>
+            <br>
+            <label>
+                PC Option (if applicable):
+                <br>
+                <select name="pcoption">
+                    <option value="na">Not Applicable</option>
+                    <option value="sf1">Solar Flare: Lvl 1</option>
+                    <option value="sr1">Shadow Reaper: Lvl 1</option>
+                    <option value="sf2">Solar Flare: Lvl 2</option>
+                    <option value="sr2">Shadow Reaper: Lvl 2</option>
+                    <option value="sf3">Solar Flare: Lvl 3</option>
+                    <option value="sr3">Shadow Reaper: Lvl 3</option>
+                    <option value="ns3">NovaStrike: Lvl 3</option>
+                    <option value="th3">ThunderHawk: Lvl 3</option>
+                    <option value="th3r">ThunderHawk: Lvl 3 (Ryzen)</option>
+                    <option value="sf4">Solar Flare: Lvl 4</option>
+                    <option value="sr4">Shadow Reaper: Lvl 4</option>
+                    <option value="sf5">Solar Flare: Lvl 5</option>
+                    <option value="sr5">Shadow Reaper: Lvl 5</option>
+                    <option value="th5">ThunderHawk: Lvl 5 (Intel)</option>
+                    <option value="sf6">Solar Flare: Lvl 6</option>
+                    <option value="sr6">Shadow Reaper: Lvl 6</option>
+                    <option value="th6">ThunderHawk: Lvl 6 (Intel)</option>
+                    <option value="sf7">Solar Flare: Lvl 7</option>
+                    <option value="sr7">Shadow Reaper: Lvl 7</option>
+                    <option value="sf8">Solar Flare: Lvl 8</option>
+                    <option value="sr8">Shadow Reaper: Lvl 8</option>
+                    <option value="gw">Genesis White</option>
+                    <option value="gb">Genesis Black</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label>
+                Windows Version:
+                <br>
+                <select name="windowsoption">
+                    <option value="unactivated">Unactivated(Default)</option>
+                    <option value="activated">Activated(+$20)</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label>
+                Cable Extensions:
+                <br>
+                <select name="cableextensions">
+                    <option value="none">None(Default)</option>
+                    <option value="black">Black(+$40)</option>
+                    <option value="white">White(+$40)</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label>
+                Any Modifications (optional):
+                <br>
+                <input name="changes"></input>
+            </label>
+            <br>
+            <br>
+            <label>
+                Budget for build (if applicable):
+                <br>
+                <input name="budget" type="number"></input>
+            </label>
+            <br>
+            <br>
+            <label>
+                Parts list (if applicable):
+                <br>
+                <input name="parts"></input>
+            </label>
+            <br>
+            <br>
+            <label>
+                What will you be using the PC for (eg. gaming, editing, etc.):
+                <br>
+                <input name="use"></input>
+            </label>
+            <br>
+            <br>
+            <label>
+                If applicable, What will games will you be playing (eg. fortnite, minecraft, etc.):
+                <br>
+                <input name="games"></input>
+            </label>
+            <br>
+            <br>
+            <label>
+                Your message(preferred parts, further edits, etc.):
+                <br>
+                <textarea name="message" style="font-family:'Be Vietnam Pro', sans-serif"></textarea>
+            </label>
+        <!-- your other form fields go here -->
         <br>
-        <br>
-        <label>
-            Service Option:
-            <select name="serviceoption">
-                <option value="purchase">Purchase PC</option>
-                <option value="budget">Budget Build</option>
-                <option value="custom">Custom PC</option>
-              </select>
-        </label>
-        <br>
-        <br>
-        <label>
-            PC Option (if applicable):
-            <select name="pcoption">
-                <option value="na">Not Applicable</option>
-                <option value="sf1">Solar Flare: Lvl 1</option>
-                <option value="sr1">Shadow Reaper: Lvl 1</option>
-                <option value="sf2">Solar Flare: Lvl 2</option>
-                <option value="sr2">Shadow Reaper: Lvl 2</option>
-                <option value="sf3">Solar Flare: Lvl 3</option>
-                <option value="sr3">Shadow Reaper: Lvl 3</option>
-                <option value="ns3">NovaStrike: Lvl 3</option>
-                <option value="th3">ThunderHawk: Lvl 3</option>
-                <option value="th3r">ThunderHawk: Lvl 3 (Ryzen)</option>
-                <option value="sf4">Solar Flare: Lvl 4</option>
-                <option value="sr4">Shadow Reaper: Lvl 4</option>
-                <option value="sf5">Solar Flare: Lvl 5</option>
-                <option value="sr5">Shadow Reaper: Lvl 5</option>
-                <option value="th5">ThunderHawk: Lvl 5 (Intel)</option>
-                <option value="sf6">Solar Flare: Lvl 6</option>
-                <option value="sr6">Shadow Reaper: Lvl 6</option>
-                <option value="th6">ThunderHawk: Lvl 6 (Intel)</option>
-                <option value="sf7">Solar Flare: Lvl 7</option>
-                <option value="sr7">Shadow Reaper: Lvl 7</option>
-                <option value="sf8">Solar Flare: Lvl 8</option>
-                <option value="sr8">Shadow Reaper: Lvl 8</option>
-                <option value="gw">Genesis White</option>
-                <option value="gb">Genesis Black</option>
-            </select>
-        </label>
-        <br>
-        <br>
-        <label>
-            Windows Version:
-            <select name="windowsoption">
-                <option value="unactivated">Unactivated(Default)</option>
-                <option value="activated">Activated(+$20)</option>
-            </select>
-        </label>
-        <br>
-        <br>
-        <label>
-            Cable Extensions:
-            <select name="cableextensions">
-                <option value="none">None(Default)</option>
-                <option value="black">Black(+$40)</option>
-                <option value="white">White(+$40)</option>
-            </select>
-        </label>
-        <br>
-        <br>
-        <label>
-            Any Modifications (optional):
-            <input name="changes"></input>
-        </label>
-        <br>
-        <br>
-        <label>
-            Budget for build (if applicable):
-            <input name="budget" type="number"></input>
-        </label>
-        <br>
-        <br>
-        <label>
-            Parts list (if applicable):
-            <input name="parts"></input>
-        </label>
-        <br>
-        <br>
-        <label>
-            What will you be using the PC for (eg. gaming, editing, etc.):
-            <input name="use"></input>
-        </label>
-        <br>
-        <br>
-        <label>
-            If applicable, What will games will you be playing (eg. fortnite, minecraft, etc.):
-            <input name="games"></input>
-        </label>
-        <br>
-        <br>
-        <label>
-            Your message(preferred parts, further edits, etc.):
-            <textarea name="message" style="font-family:'Be Vietnam Pro', sans-serif"></textarea>
-        </label>
-    <!-- your other form fields go here -->
-    <br>
-        <button type="submit" class="btn">Send</button>
-  </form>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </div>
+    
   <br>
   <h5 style="text-align: center;">
     <span class="heading">How It Works</span>

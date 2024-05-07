@@ -698,37 +698,7 @@ section{
     margin-bottom: 10rem;
     font-family: 'Open Sans', sans-serif;
 }
-form{
-    margin-top: 50px;
-    text-align: center;
-}
-.form-control{
-    width: 600px;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid gray;
-    color: black;
-    font-size: 18px;
-    margin-bottom: 16px;
-}
-input{
-    height: 45px;
-}
-form .submit{
-    background: #ff5722;
-    border-color: transparent;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    height: 50px;
-    margin-top: 20px;
-}
-form .submit:hover{
-    background-color: #f44336;
-    cursor: pointer;
-}
+
 
 /*Collapsable Box*/
 /* Style the button that is used to open and close the collapsible content */
@@ -772,12 +742,31 @@ form .submit:hover{
   content: "";
 }
 
-.infolist {
-    list-style-type: disc;
-    list-style-position: inside;
-    text-align: justify;
-  }
-  .form{
+
+
+  .purchaseform{
+    background-color: #000;
+    border: 1rem solid black;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+    display: flex;
+    margin: auto;
     text-align: left;
-    padding-left: 25lh;
+    justify-content: center;
+    width: fit-content;
   }
+form .submit{
+    background: #ff5722;
+    border-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+form .submit:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
