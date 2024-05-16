@@ -751,7 +751,6 @@ section{
     display: flex;
     margin: auto;
     text-align: left;
-    justify-content: center;
     width: fit-content;
   }
 form .submit{
